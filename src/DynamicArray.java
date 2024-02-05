@@ -5,7 +5,7 @@ public class DynamicArray<T> {
     private int size;
 
     public DynamicArray() {
-        this.array = new Object[10]; // Initial size, you can choose any size you prefer
+        this.array = new Object[1];
         this.size = 0;
     }
 
@@ -41,7 +41,7 @@ public class DynamicArray<T> {
     }
 
     public void clear() {
-        array = new Object[10]; // Reset to initial size, you can choose any size you prefer
+        array = new Object[1];
         size = 0;
     }
 
