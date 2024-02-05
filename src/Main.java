@@ -1,12 +1,17 @@
 public class Main {
     public static void main(String[] args) {
         DynamicArray<CarBrand> carBrands = new DynamicArray<>();
+        DynamicArray<BikeBrand> bikeBrands = new DynamicArray<>();
 
         // Init add method
         carBrands.add(new CarBrand("Toyota"));
         carBrands.add(new CarBrand("Ford"));
         carBrands.add(new CarBrand("Honda"));
         carBrands.add(new CarBrand("Mercedes"));
+
+        // Test DynamicArray<BikeBrand>
+        bikeBrands.add(new BikeBrand("Trek"));
+        bikeBrands.add(new BikeBrand("Shimano"));
 
         // Get all brands
         System.out.println("Brands in array:");
@@ -58,5 +63,14 @@ public class Main {
 
         // Size after clear
         System.out.println("Size after clear: " + carBrands.size());
+        System.out.println("___");
+
+        // Test bike brands print
+        System.out.println("Test bike brands in array:");
+        for (int i = 0; i < bikeBrands.size(); i++) {
+            BikeBrand brand = bikeBrands.get(i);
+            System.out.println(brand.getName());
+        }
+
     }
 }
