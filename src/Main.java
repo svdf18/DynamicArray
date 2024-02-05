@@ -10,8 +10,8 @@ public class Main {
         carBrands.add(new CarBrand("Mercedes"));
 
         // Test DynamicArray<BikeBrand>
-        bikeBrands.add(new BikeBrand("Trek"));
-        bikeBrands.add(new BikeBrand("Shimano"));
+        bikeBrands.add(new BikeBrand("Trek", 12));
+        bikeBrands.add(new BikeBrand("Shimano", 3));
 
         // Get all brands
         System.out.println("Brands in array:");
@@ -69,7 +69,7 @@ public class Main {
         System.out.println("Test bike brands in array:");
         for (int i = 0; i < bikeBrands.size(); i++) {
             BikeBrand brand = bikeBrands.get(i);
-            System.out.println(brand.getName());
+            System.out.println("Brand: " + brand.getName() + ", " + "Gears: " + brand.getGears());
         }
 
     }
